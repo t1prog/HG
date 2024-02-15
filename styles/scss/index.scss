@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import './components/header';
+@import './components/diagramma';
+@import './components/functional';
+@import './components/questionary';
+@import './components/form';
+html,
+body {
+  margin: 0;
+  min-width: 400px;
+  font-family: 'Open Sans';
+}
+
+.gr-input-box {
+  color: white !important;
+  border: solid 1.3px transparent;
+  border-radius: 5px;
+  background-image: linear-gradient(#272727, #272727),
+    linear-gradient(to right, $gradient_s, $gradient_e);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0px 4px 4px 0px #54545433;
+  box-shadow: 0px 4px 10px 0px #1d01014d;
+}
+
+.f-space-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bc-red div {
+  background-color: #f22431;
+}
+
+.bc-purple div {
+  background-color: #9020e0;
+}
+
+.bc-crimson div {
+  background-color: #d30088;
+}
+
+.bc-yellow div {
+  background-color: #d30088;
+}
+.bc-white div {
+  background-color: #e4eef5;
+  color: #3f3f3f;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn-check {
+  height: 20px;
+}
+
+.btn-primary {
+  background-color: #fbfdff !important;
+  border: 1px solid #c2c2c2;
+}
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:visited,
+.btn-primary:disabled {
+  background-color: #272727ce !important;
+  border: 1px solid #c2c2c2;
+}
+.btn-check:checked + .btn-primary {
+  background-color: #272727 !important;
+  border: 1px solid #c2c2c2;
+}

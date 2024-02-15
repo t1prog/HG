@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/scss/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <div class="container logo-bg">
+          <div class="logo-bg-left">
+            <img
+              src="./public/svg/logo_background_left.svg"
+              alt="logo_background_left"
+            />
+          </div>
+          <div class="logo-bg-right">
+            <img
+              src="./public/svg/logo_background_right.svg"
+              alt="logo_background_right"
+            />
+          </div>
+        </div>
+        <nav class="h-first container">
+          <div class="h-first__sign d-flex">
+            <img
+              class="logo"
+              src="./public/svg/logo_main.svg"
+              alt="logo_main"
+            />
+            <img
+              class="logo"
+              src="./public/svg/separator_1.svg"
+              alt="separator_1"
+            />
+            <img
+              class="logo-min"
+              src="./public/svg/logo_min.svg"
+              alt="logo_min"
+            />
+            <span class="h-first__sign-text logo">
+              <span>НАДЕЖНЫЙ ПАРТНЕР</span>
+              <span>ВАШЕГО БИЗНЕСА</span>
+            </span>
+          </div>
+          <div></div>
+          <div class="h-first__calc d-flex">
+            <div class="h-first__calc-text">Дата заполнения:</div>
+            <div>
+              <div class="h-first__calc-date d-flex">
+                <div class="h-first__calc-date__text">08.08.2023</div>
+                <div class="h-first__calc-date__icon">
+                  <img src="./public/svg/icons/calendar.svg" alt="calendar" />
+                </div>
+              </div>
+              <div class="h-first__calc-separator">
+                <img src="./public/svg/separator_2.svg" alt="separator_2" />
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="container d-flex flex-column">
+          <div class="h-second">
+            <div class="container">
+              <div class="h-second-container">
+                <div class="h-second__title d-flex flex-column">
+                  <div class="h-second__title-first">
+                    АНКЕТА ПРИЕМА НА РАБОТУ
+                  </div>
+                  <div class="h-second__title-second">
+                    (Практикант – Стажер)
+                  </div>
+                </div>
+                <div class="h-second__form form-row">
+                  <div class="h-second__form-container">
+                    <div class="form-group">
+                      <label for="inputName">Фамилия Имя Отчество</label>
+                      <input
+                        type="text"
+                        class="form-control h-second__form-input gr-input-box"
+                        id="inputName"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="inputName">Телефон</label>
+                      <input
+                        type="text"
+                        class="form-control h-second__form-input gr-input-box"
+                        id="inputName"
+                      />
+                    </div>
+                    <div class="form-group col f-space-b pt-3">
+                      <label for="time1"
+                        >Согласованное время собеседования</label
+                      >
+                      <div>
+                        <input
+                          type="text"
+                          name="time1-1"
+                          id="time1-1"
+                          class="h-second__form-input__mini gr-input-box"
+                          value="01"
+                        />
+                        <span>:</span>
+                        <input
+                          type="text"
+                          name="time1-2"
+                          id="time1-2"
+                          class="h-second__form-input__mini gr-input-box"
+                          value="30"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group col f-space-b pt-2">
+                      <label for="time2">Время начала заполнения анкеты</label>
+                      <div>
+                        <input
+                          type="text"
+                          name="time2-1"
+                          id="time2-1"
+                          class="h-second__form-input__mini gr-input-box"
+                          value="15"
+                        />
+                        <span>:</span>
+                        <input
+                          type="text"
+                          name="time2-2"
+                          id="time2-2"
+                          class="h-second__form-input__mini gr-input-box"
+                          value="30"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-carefull">
+                  *Общее время на заполнение анкеты не должно превышать 150
+                  минут
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="container">
+          <div class="c-diagramma d-flex flex-column pt-5 pb-5">
+            <div class="c-diagramma__title">
+              <div class="c-diagramma__title-first">
+                <span>WEB developer bitrix (backend)</span>
+              </div>
+              <div class="c-diagramma__title-second">
+                <span>По данному направлению вы будете работать:</span>
+              </div>
+            </div>
+            <div class="c-diagramma__full pt-5">
+              <img src="./public/svg/diagramma/diagramma.svg" alt="diagramma" />
+            </div>
+            <div class="c-diagramma__min pt-5">
+              <div class="c-diagramma__min-container">
+                <div class="c-diagramma__min-container__item bc-crimson">
+                  <div class="c-diagramma__min-container__item-left">5%</div>
+                  <div class="c-diagramma__min-container__item-right">
+                    Написание собственных модулей и компонентов - bitrix
+                    framework
+                  </div>
+                </div>
+                <div class="c-diagramma__min-container__item bc-purple">
+                  <div class="c-diagramma__min-container__item-left">5%</div>
+                  <div class="c-diagramma__min-container__item-right">
+                    Работа с классами и ORM в bitrix
+                  </div>
+                </div>
+                <div class="c-diagramma__min-container__item bc-red">
+                  <div class="c-diagramma__min-container__item-left">20%</div>
+                  <div class="c-diagramma__min-container__item-right">
+                    Изучение JS / HTML /CSS - основы
+                  </div>
+                </div>
+                <div class="c-diagramma__min-container__item bc-yellow">
+                  <div class="c-diagramma__min-container__item-left">20%</div>
+                  <div class="c-diagramma__min-container__item-right">
+                    Изучение PHP / SQL-запросы
+                  </div>
+                </div>
+                <div class="c-diagramma__min-container__item bc-white">
+                  <div class="c-diagramma__min-container__item-left">50%</div>
+                  <div class="c-diagramma__min-container__item-right">
+                    Работа и изучение с CMS 1C-Битрикс, на базе bitrix framework
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-functional pt-5 pb-5">
+            <div class="c-functional__container">
+              <div class="c-functional__bg">
+                <img src="./public/svg/functional-gb.svg" alt="functional" />
+              </div>
+              <div class="c-functional__main">
+                <div class="c-functional__main-img">
+                  <img src="./public/svg/phone.svg" alt="phone" />
+                </div>
+                <div class="c-functional__main-title">
+                  <span
+                    >Основные должностные обязанности на ближайшие 3
+                    месяца:</span
+                  >
+                </div>
+                <div class="c-functional__main-list">
+                  <ol class="c-functional__text-list">
+                    <li class="c-functional__text-list__item">
+                      Выезд к клиенту на место проведений работ по устранению
+                      проблем связанных с сетью и компьютерным оборудованием.
+                    </li>
+                    <li class="c-functional__text-list__item">
+                      Анализ и сбор информации топологии ЛВС в организациях.
+                    </li>
+                    <li class="c-functional__text-list__item">
+                      Прием звонков по телефону.
+                    </li>
+                    <li class="c-functional__text-list__item">
+                      Работы по администрированию ЛВС, настройка и мелкий
+                      ремонту компьютерной, орг технки, сетевого оборудования и
+                      т.д.
+                    </li>
+                    <li class="c-functional__text-list__item">
+                      Прочая работа, согласно списка выше.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-questionary">
+            <div class="c-questionary__container">
+              <div class="c-questionary__container-text">
+                <span>
+                  Наша компания не заставляет сотрудников работать на износ или
+                  перерабатывать бесплатно, мы платим белою заработную плату и
+                  даем возможности получения дополнительных бонусов. Со временем
+                  мы планируем давать сотрудников больше «Плюшек» для мотивации
+                  хорошо выполнять свою работу.<br />
+                  ВАЖНО!!! Ответьте на утверждения ниже, описывая ваше мнение:
+                </span>
+              </div>
+              <div class="c-questionary__container-form pt-5">
+                <div class="c-questionary__container-form__item">
+                  <div class="c-questionary__container-form__item-text">
+                    <span
+                      >Если сотрудник опаздывает на работу более 2-х раз в месяц
+                      или уходит раньше без согласования, как вы считаете это
+                      являться поводом для увольнения?</span
+                    >
+                  </div>
+                  <div class="c-questionary__container-form__item-area">
+                    <textarea name="q1" id="q1"></textarea>
+                  </div>
+                </div>
+                <div class="c-questionary__container-form__item">
+                  <div class="c-questionary__container-form__item-text">
+                    <span
+                      >Имеет ли право сотрудник решать свои личные проблемы за
+                      счет работодателя, без его разрешения?</span
+                    >
+                  </div>
+                  <div class="c-questionary__container-form__item-area">
+                    <textarea name="q2" id="q2"></textarea>
+                  </div>
+                </div>
+                <div class="c-questionary__container-form__item">
+                  <div class="c-questionary__container-form__item-text">
+                    <span
+                      >Обязан ли сотрудник получая своевременно заработную плату
+                      за выполненную работу, быть готовым самостоятельно
+                      готовиться к выполнению поставленных задач, своевременно и
+                      в срок?</span
+                    >
+                  </div>
+                  <div class="c-questionary__container-form__item-area">
+                    <textarea name="q3" id="q3"></textarea>
+                  </div>
+                </div>
+                <div class="c-questionary__container-form__item">
+                  <div class="c-questionary__container-form__item-text">
+                    <span
+                      >Понимаете ли вы что если в Пн. вам тяжело работать, из за
+                      тяжелых выходных это не вина работодателя?</span
+                    >
+                  </div>
+
+                  <div class="c-questionary__container-form__item-area">
+                    <textarea name="q4" id="q4"></textarea>
+                  </div>
+                </div>
+                <div class="c-questionary__container-form__item">
+                  <div class="c-questionary__container-form__item-text">
+                    <span
+                      >Как вы считаете, если вы будете плохо выполнять свою
+                      работу, это может являться поводом для увольнения или
+                      уменьшения заработной платы?</span
+                    >
+                  </div>
+                  <div class="c-questionary__container-form__item-area">
+                    <textarea name="q5" id="q5"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-form">
+            <div class="c-form__header">
+              <div class="c-form__header-nav gr-input-box">
+                <div class="c-form__header-nav__item">
+                  <span>Общая информация</span>
+                </div>
+                <div class="c-form__header-nav__item"><span>Знания</span></div>
+                <div class="c-form__header-nav__item"><span>Логика</span></div>
+                <div class="c-form__header-nav__item"><span>Вывод</span></div>
+              </div>
+            </div>
+            <div class="c-form__container">
+              <div class="c-form__container-info">
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span>ФИО / Возраст / Вес / Рост</span>
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <input type="text" name="general" />
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span>Профиль в соц. сетях, если есть</span>
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <input type="text" name="social" />
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span>Причина смены места работы</span>
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <input type="text" name="work" />
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span
+                      >Желаемая заработная плата на начало работы / в первый год
+                      работы / во второй</span
+                    >
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <input type="text" name="salary" />
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span>Наличие автомобиля и прав управления</span>
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <input type="text" name="automobile" />
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span
+                      >Укажите любое контактное лицо и его контакты, которое
+                      может дать вам рекомендацию, с любого места работы из
+                      указанного в резюме / если таковое лицо отсутствует,
+                      укажите причину</span
+                    >
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <textarea name="contacts"></textarea>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span
+                      >Сколько раз за последние 3 месяца вы опаздывали на работу
+                      или уходили с нее раньше / Сколько раз за последние 6
+                      месяцев вы болели или отсутствовали на работе</span
+                    >
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <textarea name="hooky"></textarea>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span>Общительный ли вы человек?</span>
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <div class="c-form__container-info__item-input__radio">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="communicative"
+                        id="communicative1"
+                        autocomplete="off"
+                      />
+                      <label
+                        class="btn btn-primary shadow-none"
+                        for="communicative1"
+                        >Да</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="communicative"
+                        id="communicative2"
+                        autocomplete="off"
+                      />
+                      <label
+                        class="btn btn-primary shadow-none"
+                        for="communicative2"
+                        >Нет</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span>Конфликтный или нет?</span>
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <div class="c-form__container-info__item-input__radio">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="conflictual"
+                        id="conflictual1"
+                        autocomplete="off"
+                      />
+                      <label
+                        class="btn btn-primary shadow-none"
+                        for="conflictual1"
+                        >Да</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="conflictual"
+                        id="conflictual2"
+                        autocomplete="off"
+                      />
+                      <label
+                        class="btn btn-primary shadow-none"
+                        for="conflictual2"
+                        >Нет</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span>Исполнительный или нет?</span>
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <div class="c-form__container-info__item-input__radio">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="executive"
+                        id="executive1"
+                        autocomplete="off"
+                      />
+                      <label
+                        class="btn btn-primary shadow-none"
+                        for="executive1"
+                        >Да</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="executive"
+                        id="executive2"
+                        autocomplete="off"
+                      />
+                      <label
+                        class="btn btn-primary shadow-none"
+                        for="executive2"
+                        >Нет</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span
+                      >Много ли у вас свободного времени и как вы его
+                      тратите?</span
+                    >
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <textarea name="leisure"></textarea>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span
+                      >Что для вас общая цель, к которой идет организация, в
+                      которой вы работаете?</span
+                    >
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <textarea name="goal"></textarea>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span>Что для вас значит понятие «Самореализация»?</span>
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <textarea name="self-realization"></textarea>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span
+                      >Как вы считаете, что произойдет с Вами через 1,5
+                      года</span
+                    >
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <textarea name="self-realization"></textarea>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span
+                      >В какой момент работы вы понимаете, что не достигните
+                      своей цели в данной организации?</span
+                    >
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <textarea name="purposeful"></textarea>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span
+                      >Как вы реагируете, когда вас увлекают во лжи в сданной
+                      работе, пытаетесь выкрутиться или говорите что такого
+                      больше не будет?</span
+                    >
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <textarea name="lie"></textarea>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span
+                      >Готовы ли вы не получать денежного вознаграждения взамен
+                      на знания?</span
+                    >
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <div class="c-form__container-info__item-input__radio">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="money"
+                        id="money1"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-primary shadow-none" for="money1"
+                        >Да</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="money"
+                        id="money2"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-primary shadow-none" for="money2"
+                        >Нет</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="money"
+                        id="money3"
+                        autocomplete="off"
+                      />
+                      <label
+                        class="btn btn-primary shadow-none last"
+                        for="money3"
+                        >Я считаю у меня есть навыки чтобы претендовать на
+                        минимально вознаграждение</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="c-form__container-info__item">
+                  <div class="c-form__container-info__item-text">
+                    <span
+                      >Какой срок практики, стажировки наиболее приемлем,
+                      подчеркните свой выбор:</span
+                    >
+                  </div>
+                  <div class="c-form__container-info__item-input">
+                    <div class="c-form__container-info__item-input__radio">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="term"
+                        id="term1"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-primary shadow-none" for="term1"
+                        >3 мес</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="term"
+                        id="term2"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-primary shadow-none" for="term2"
+                        >6 мес</label
+                      >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="term"
+                        id="term3"
+                        autocomplete="off"
+                      />
+                      <label
+                        class="btn btn-primary shadow-none last"
+                        for="term3"
+                        >Без практики у меня есть необходимые навыки</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-form__container-knowledge hidden"></div>
+
+              <div class="c-form__container-logic hidden"></div>
+
+              <div class="c-form__container-conclusion hidden"></div>
+            </div>
+            <div class="c-form__bg">
+              <img src="./public/svg/logo_bg_form.svg" alt="logo_bg_form" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container"></div>
+      </div>
+    </div>
+  </body>
+</html>

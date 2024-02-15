@@ -1,0 +1,86 @@
+.c-diagramma {
+  background: #fffbfb;
+  &__full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__min {
+    display: none;
+    &-container {
+      display: grid;
+      max-height: 225px;
+      grid-template-rows: repeat(1fr, 5);
+      &__item {
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        color: white;
+        &-left {
+          height: 45px;
+          width: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+        }
+        &-right {
+          padding-left: 5px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          font-weight: 400;
+          line-height: 17.7px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    &__full img {
+      width: 768px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &__full {
+      display: none;
+    }
+    &__min {
+      display: block;
+    }
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    &-first {
+      text-align: center;
+      font-size: 50px;
+    }
+    &-second {
+      color: #111b26;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    @media screen and (max-width: 1200px) {
+      &-first {
+        font-size: 40px;
+      }
+      &-second {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      &-first {
+        text-align: center;
+        font-size: 20px;
+      }
+      &-second {
+        font-size: 10px;
+      }
+    }
+  }
+}

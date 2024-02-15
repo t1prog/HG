@@ -1,0 +1,204 @@
+@import './colors';
+
+$header-height: 600px;
+$h-first-color: rgba(
+  $color: $black,
+  $alpha: 0,
+);
+
+.header {
+  height: $header-height;
+  background-color: $black;
+
+  @media screen and (max-width: 768px) {
+    background-color: $main;
+  }
+}
+
+.h-first {
+  height: 80px;
+  width: 100%;
+  background: $h-first-color;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__sign {
+    gap: 10px;
+    position: fixed;
+    z-index: 1;
+
+    &-text {
+      font-size: 10px;
+      line-height: 12.6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .logo {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+      &-min {
+        @media screen and (min-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__calc {
+    gap: 5px;
+
+    &-text {
+      font-size: 14px;
+    }
+
+    &-date {
+      justify-content: space-around;
+
+      &__text {
+        font-size: 16px;
+      }
+    }
+
+    &-separator {
+      display: flex;
+      align-items: start;
+    }
+  }
+}
+
+.h-second {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  color: white;
+
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    height: calc(#{$header-height} - 80px);
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-first {
+      font-size: 50px;
+      line-height: 80px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 26px;
+        line-height: 30px;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 25px;
+        line-height: 14px;
+      }
+    }
+
+    &-second {
+      font-size: 30px;
+      padding-top: 10px;
+      @media screen and (max-width: 768px) {
+        font-size: 15px;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    &-container {
+      width: 450px;
+
+      label {
+        font-size: 16px;
+      }
+
+      span {
+        line-height: 30px;
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 350px;
+
+        label {
+          font-size: 14px;
+        }
+
+        span {
+          line-height: 20px;
+          font-size: 15px;
+        }
+      }
+    }
+
+    &-input {
+      color: white;
+      width: 100%;
+      height: 40px;
+
+      &__mini {
+        width: 30px;
+        height: 30px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+.h-carefull {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 11px;
+  line-height: 12px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    align-items: end;
+    font-size: 9px;
+  }
+}
+
+.logo-bg {
+  position: absolute;
+  max-height: $header-height;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  &-left,
+  &-right {
+    position: absolute;
+  }
+
+  &-right {
+    right: 0;
+    bottom: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
