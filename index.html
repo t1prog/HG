@@ -9,6 +9,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="./js/index.js"></script>
     <link rel="stylesheet" href="./styles/scss/index.css" />
     <title>Document</title>
   </head>
@@ -32,21 +33,35 @@
         <nav class="h-first container">
           <div class="h-first__sign d-flex">
             <img
+              id="logo-white"
               class="logo"
               src="./public/svg/logo_main.svg"
               alt="logo_main"
             />
             <img
+              id="logo-black"
+              class="logo hidden"
+              src="./public/svg/logo_main_black.svg"
+              alt="logo_main_black"
+            />
+            <img
+              id="separator-1"
               class="logo"
               src="./public/svg/separator_1.svg"
               alt="separator_1"
+            />
+            <img
+              id="separator-3"
+              class="logo hidden"
+              src="./public/svg/separator_3.svg"
+              alt="separator_3"
             />
             <img
               class="logo-min"
               src="./public/svg/logo_min.svg"
               alt="logo_min"
             />
-            <span class="h-first__sign-text logo">
+            <span class="h-first__sign-text logo" id="logo-text">
               <span>НАДЕЖНЫЙ ПАРТНЕР</span>
               <span>ВАШЕГО БИЗНЕСА</span>
             </span>
@@ -56,7 +71,7 @@
             <div class="h-first__calc-text">Дата заполнения:</div>
             <div>
               <div class="h-first__calc-date d-flex">
-                <div class="h-first__calc-date__text">08.08.2023</div>
+                <div class="h-first__calc-date__text" id="date-now"></div>
                 <div class="h-first__calc-date__icon">
                   <img src="./public/svg/icons/calendar.svg" alt="calendar" />
                 </div>
@@ -94,7 +109,7 @@
                       <input
                         type="text"
                         class="form-control h-second__form-input gr-input-box"
-                        id="inputName"
+                        id="inputPhone"
                       />
                     </div>
                     <div class="form-group col f-space-b pt-3">
@@ -106,7 +121,7 @@
                           type="text"
                           name="time1-1"
                           id="time1-1"
-                          class="h-second__form-input__mini gr-input-box"
+                          class="h-second__form-input__mini gr-input-box h-time"
                           value="01"
                         />
                         <span>:</span>
@@ -114,7 +129,7 @@
                           type="text"
                           name="time1-2"
                           id="time1-2"
-                          class="h-second__form-input__mini gr-input-box"
+                          class="h-second__form-input__mini gr-input-box h-time"
                           value="30"
                         />
                       </div>
@@ -126,7 +141,7 @@
                           type="text"
                           name="time2-1"
                           id="time2-1"
-                          class="h-second__form-input__mini gr-input-box"
+                          class="h-second__form-input__mini gr-input-box h-time"
                           value="15"
                         />
                         <span>:</span>
@@ -134,7 +149,7 @@
                           type="text"
                           name="time2-2"
                           id="time2-2"
-                          class="h-second__form-input__mini gr-input-box"
+                          class="h-second__form-input__mini gr-input-box h-time"
                           value="30"
                         />
                       </div>
@@ -653,41 +668,12 @@
                 </div>
               </div>
 
-              <div class="c-form__container-knowledge">
+              <div class="c-form__container-knowledge hidden">
                 <div class="c-form__container-knowledge__title">
                   <span>ПОНИМАЕТЕ ЛИ ВЫ СВОЮ РАБОТУ</span>
                 </div>
                 <div class="c-form__container-knowledge__form">
                   <div class="c-form__container-knowledge__form-first">
-                    <!-- <div class="c-form__container-knowledge__form-first__item">
-                      <span
-                        class="c-form__container-knowledge__form-first__item-text"
-                        >Опишите ваши достоинства и недостатки как
-                        потенциального специалиста:</span
-                      >
-                    </div>
-                    <div class="c-form__container-knowledge__form-first__item">
-                      <div
-                        class="c-form__container-knowledge__form-first__item-input"
-                      >
-                        <textarea
-                          class="text-a"
-                          name="plus"
-                          placeholder="Достоинства ..."
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="c-form__container-knowledge__form-first__item">
-                      <div
-                        class="c-form__container-knowledge__form-first__item-input"
-                      >
-                        <textarea
-                          class="text-a"
-                          name="minus"
-                          placeholder="Недостатки ..."
-                        ></textarea>
-                      </div>
-                    </div> -->
                     <div
                       class="c-form__container-knowledge__form-first__item-text"
                     >
@@ -751,10 +737,83 @@
                 </div>
               </div>
 
-              <div class="c-form__container-logic hidden"></div>
+              <div class="c-form__container-conclusion hidden">
+                <div class="c-form__container-conclusion__title">
+                  <div class="c-form__container-conclusion__title-text">
+                    <span class="big">ЗАРПЛАТА И ГРАФИК РАБОТЫ,</span>
+                    <span class="small"
+                      >у нас можно работать по гибкому графику, мы не
+                      привязываем человека к рабочему месту, стандарт работы с
+                      9.00 – 18.00 по Томску, но если вы предоставите
+                      обоснование, почему мы вам должны предоставить гибкий
+                      график, который нас устроит, мы его рассмотрим.</span
+                    >
+                  </div>
+                </div>
+                <div class="c-form__container-conclusion__carefull">
+                  <div class="c-form__container-conclusion__carefull-container">
+                    <div class="c-form__container-conclusion__carefull-title">
+                      <span>ВАЖНО:</span>
+                    </div>
+                    <div class="c-form__container-conclusion__carefull-list">
+                      <ul>
+                        <li>
+                          Если вы не ответили от 60-80% вопросов из раздела
+                          «ЗНАНИЯ» (ваши ответы могут быть не верны, но близки к
+                          ответу, это допускается)
+                        </li>
+                        <li>
+                          Если вы не решили все задачи из раздела «ЛОГИКА»
+                          (допускается частичное решение или описание логики
+                          решения)
+                        </li>
+                        <li class="li-unformat-pb">
+                          Вы можете претендовать только на должность
+                          «ПРАКТИКАНТ» или «СТАЖЕР»
+                        </li>
+                        <li>
+                          Если вы заполнили анкету полностью и ваши ответы верны
+                          или нас удовлетворят Вы можете претендовать на
+                          должность «СОТРУДНИК»
+                        </li>
+                        <li class="li-unformat">
+                          Вы можете претендовать на должность «СОТРУДНИК»
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-              <div class="c-form__container-conclusion hidden"></div>
+              <div class="c-form__container-logic">
+                <div class="c-form__container-logic__container">
+                  <div class="c-form__container-logic__title">
+                    <div class="c-form__container-logic__title-first">
+                      <span>РЕШИТЕ СУДОКУ это головоломка с числами</span>
+                    </div>
+                    <div class="c-form__container-logic__title-text">
+                      <span
+                        >Краткий курс правил: игровое поле представляет собой
+                        квадрат размером 9×9, разделённый на меньшие квадраты со
+                        стороной в 3 клетки (районы), одна и та же цифра может
+                        появиться только один раз в каждой строчке, столбике и
+                        районе (если вы не предоставите полное решение задачи не
+                        страшно).
+                      </span>
+                    </div>
+                    <div class="c-form__container-logic__sudoku">
+                      <div class="c-form__container-logic__sudoku-bg">
+                        <img src="./public/svg/sudoku.svg" alt="sudoku" />
+                        <div class="c-form__container-logic__sudoku-bg__table">
+                          <table id="sudokuTable"></table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
             <div class="c-form__bg">
               <img src="./public/svg/logo_bg_form.svg" alt="logo_bg_form" />
             </div>
@@ -765,6 +824,26 @@
       <div class="footer">
         <div class="container"></div>
       </div>
+
+      <!-- <script>
+        // Создаем таблицу судоку
+        function createSudokuTable() {
+          var table = document.getElementById('sudokuTable')
+          var cellCount = 81 // 9x9 ячеек
+
+          for (var i = 0; i < 9; i++) {
+            var row = table.insertRow()
+            for (var j = 0; j < 9; j++) {
+              var cell = row.insertCell()
+              var cellId = i * 9 + j + 1
+              cell.id = 'cell' + cellId
+            }
+          }
+        }
+
+        // Вызываем функцию создания таблицы при загрузке страницы
+        window.onload = createSudokuTable
+      </script> -->
     </div>
   </body>
 </html>

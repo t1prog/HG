@@ -20,6 +20,11 @@
       span {
         width: 80%;
       }
+      @media screen and (max-width: 1000px) {
+        span {
+          font-size: 22px;
+        }
+      }
     }
     &-form {
       display: flex;

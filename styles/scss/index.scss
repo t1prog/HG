@@ -77,3 +77,12 @@ body {
   background-color: #fbfdff !important;
   border-radius: 10px;
 }
+
+.li-unformat {
+  list-style: none !important;
+  list-style-type: none !important;
+  &-pb {
+    @extend .li-unformat;
+    padding-bottom: 10px;
+  }
+}
