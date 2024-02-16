@@ -66,18 +66,38 @@
             }
           }
         }
+        .last {
+          font-size: 10px;
+        }
         @media screen and (max-width: 768px) {
           grid-template-columns: 1fr;
           grid-template-rows: 1fr;
           &-input__radio {
             grid-template-columns: 1fr 1fr;
             .last {
+              font-size: 12px;
               grid-row-start: 2;
               grid-row-end: 2;
               grid-column-start: 1;
               grid-column-end: 3;
             }
           }
+        }
+      }
+    }
+
+    &-knowledge {
+      &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 300;
+      }
+      &__form {
+        &-first {
+        }
+        &-second {
         }
       }
     }
