@@ -100,7 +100,7 @@ function getFormattedDate() {
 
   return dd + '.' + mm + '.' + yyyy
 }
-//HEADER HANDLER
+
 function headerHandler() {
   const labelDate = document.getElementById('date-now')
   labelDate.innerHTML = String(getFormattedDate())
@@ -128,7 +128,6 @@ function headerHandler() {
   })
 }
 
-//LOGO HANDLER
 window.addEventListener('scroll', function () {
   let logoW = document.getElementById('logo-white')
   let logoB = document.getElementById('logo-black')
@@ -151,7 +150,28 @@ window.addEventListener('scroll', function () {
   }
 })
 
+function infoNavControl() {
+  const nav = document.getElementsByClassName('c-form__header-nav__item')
+  for (const item of nav) {
+    item.addEventListener('click', (event) => {
+      const clickedItem = event.currentTarget
+      for (const navItem of nav) {
+        if (navItem === clickedItem) {
+          navItem.classList.add('active')
+          document.getElementById(navItem.id + '-form').classList.add('active')
+        } else {
+          navItem.classList.remove('active')
+          document
+            .getElementById(navItem.id + '-form')
+            .classList.remove('active')
+        }
+      }
+    })
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   createSudokuTable()
   headerHandler()
+  infoNavControl()
 })

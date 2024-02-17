@@ -336,16 +336,22 @@
           <div class="c-form">
             <div class="c-form__header">
               <div class="c-form__header-nav gr-input-box">
-                <div class="c-form__header-nav__item">
+                <div class="c-form__header-nav__item active" id="nav-info">
                   <span>Общая информация</span>
                 </div>
-                <div class="c-form__header-nav__item"><span>Знания</span></div>
-                <div class="c-form__header-nav__item"><span>Логика</span></div>
-                <div class="c-form__header-nav__item"><span>Вывод</span></div>
+                <div class="c-form__header-nav__item" id="nav-knowledge">
+                  <span>Знания</span>
+                </div>
+                <div class="c-form__header-nav__item" id="nav-logic">
+                  <span>Логика</span>
+                </div>
+                <div class="c-form__header-nav__item" id="nav-conclusion">
+                  <span>Вывод</span>
+                </div>
               </div>
             </div>
             <div class="c-form__container">
-              <div class="c-form__container-info hidden">
+              <div class="c-form__container-info active" id="nav-info-form">
                 <div class="c-form__container-info__item">
                   <div class="c-form__container-info__item-text">
                     <span>ФИО / Возраст / Вес / Рост</span>
@@ -668,7 +674,7 @@
                 </div>
               </div>
 
-              <div class="c-form__container-knowledge hidden">
+              <div class="c-form__container-knowledge" id="nav-knowledge-form">
                 <div class="c-form__container-knowledge__title">
                   <span>ПОНИМАЕТЕ ЛИ ВЫ СВОЮ РАБОТУ</span>
                 </div>
@@ -737,7 +743,10 @@
                 </div>
               </div>
 
-              <div class="c-form__container-conclusion hidden">
+              <div
+                class="c-form__container-conclusion"
+                id="nav-conclusion-form"
+              >
                 <div class="c-form__container-conclusion__title">
                   <div class="c-form__container-conclusion__title-text">
                     <span class="big">ЗАРПЛАТА И ГРАФИК РАБОТЫ,</span>
@@ -785,7 +794,7 @@
                 </div>
               </div>
 
-              <div class="c-form__container-logic">
+              <div class="c-form__container-logic" id="nav-logic-form">
                 <div class="c-form__container-logic__container">
                   <div class="c-form__container-logic__title">
                     <div class="c-form__container-logic__title-first">
@@ -820,30 +829,27 @@
           </div>
         </div>
       </div>
-
-      <div class="footer">
-        <div class="container"></div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-item footer-item-img">
+            <img src="./public/svg/logo_main_white.svg" alt="footer_logo" />
+          </div>
+          <div class="footer-item footer-item-policy-active">
+            <span>Политика конфиденциальности</span>
+          </div>
+          <div class="footer-item footer-item-tel">
+            <span>
+              ООО «ХЭЛП»<br />
+              тел. 907-957, 706-806 <br />
+              <span class="footer-item-policy-hidden"
+                >Политика конфиденциальности</span
+              >
+            </span>
+          </div>
+        </div>
       </div>
-
-      <!-- <script>
-        // Создаем таблицу судоку
-        function createSudokuTable() {
-          var table = document.getElementById('sudokuTable')
-          var cellCount = 81 // 9x9 ячеек
-
-          for (var i = 0; i < 9; i++) {
-            var row = table.insertRow()
-            for (var j = 0; j < 9; j++) {
-              var cell = row.insertCell()
-              var cellId = i * 9 + j + 1
-              cell.id = 'cell' + cellId
-            }
-          }
-        }
-
-        // Вызываем функцию создания таблицы при загрузке страницы
-        window.onload = createSudokuTable
-      </script> -->
     </div>
   </body>
 </html>
