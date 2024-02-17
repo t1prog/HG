@@ -116,7 +116,7 @@ function headerHandler() {
   for (let i = 0; i < timeArr.length; i++) {
     timeArr[i].setAttribute('maxlength', '2')
     timeArr[i].addEventListener('input', (event) => {
-      validator.hours(event)
+      validator.numberOnly(event)
     })
   }
 
